@@ -38,5 +38,6 @@ mkdir -v /opt/webmcp
 cp -vRL framework/* /opt/webmcp/
 
 # 6. Install the LiquidFeedback-Frontend
-mkdir -v /opt/liquid_feedback_frontend
-
+tar xvf /vagrant/archive/liquid_feedback_frontend-v3.2.1.tar.gz -C /opt/
+mv -v /opt/liquid_feedback_frontend-v3.2.1 /opt/liquid_feedback_frontend
+chown -v www-data /opt/liquid_feedback_frontend/tmp
